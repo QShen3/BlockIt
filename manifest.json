@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "BlockIt",
+    "version": "0.1.0",
+    "description": "Block a user in some sn, like tieba.",
+    "icons": {
+        "48": "icons/BlockIt-48.png",
+        "96": "icons/BlockIt-96.png"
+    },
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    "browser_action": {
+        "default_icon": "icons/BlockIt-48.png",
+        "default_title": "BlockIt",
+        "default_popup": "./settings.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://tieba.baidu.com/f*"
+            ],
+            "js": [
+                "src/jquery.slim.min.js",
+                "src/main.js"
+            ]
+        }
+    ]
+}

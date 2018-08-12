@@ -1,0 +1,14 @@
+{
+  "name": "blockit",
+  "version": "0.0.1",
+  "description": "Block a user in some sn.",
+  "main": "main.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "QShen",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
